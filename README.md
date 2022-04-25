@@ -39,4 +39,6 @@ ssh into the frontend of the cluster. Open up python by typing `ipython`, and th
 
 This assumes you want to run jobs on a "Standard" queue/partition. A lot of the information about the nodes on that partition comes from [here.](https://www.rc.virginia.edu/userinfo/rivanna/queues/) It is important to realize that you may or may not have access to some of these, and that some queues limit how many nodes/processes you can request.
 
+You can check on the status of your jobs from the command line. Run something like `qstat -u trb5me`
+
 
