@@ -42,7 +42,9 @@ something like it:
 
 This assumes you want to run jobs on a "Standard" queue/partition. A lot of the information about the nodes on that partition comes from [here.](https://www.rc.virginia.edu/userinfo/rivanna/queues/) It is important to realize that you may or may not have access to some of these, and that some queues limit how many nodes/processes you can request.
 
-You can check on the status of your jobs from the command line. Run something like `qstat -u trb5me`
+You can check on the status of your jobs from the command line. Run something like `qstat -u trb5me`. If your code is
+running slowly, that might be explained by the fact that your jobs are still sitting in the queue. This will help you
+tell if they are. 
 
 If you want to read in that data we mentioned earlier, you can run something like this
 
@@ -50,5 +52,6 @@ If you want to read in that data we mentioned earlier, you can run something lik
     os.chdir("/scratch/trb5me/")
     import dask.dataframe as dd
     my_data = dd.read_csv('cool_data.csv', dtype=dtypes) 
+
 
 
