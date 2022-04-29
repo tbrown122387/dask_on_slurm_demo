@@ -54,7 +54,7 @@ However, the attached script does not make use of external data.
 
 ## Observe Performance
 
-When you request resources, you do not instantaneously receive them. You might end up waiting for those resources for a while, depending on how much you requested, and for how long. You can check on the status of your jobs from the command line. Run something like `qstat -u trb5me`. If your code is running slowly, or not at all, that might be explained by the fact that your resource request jobs are still sitting in the queue. This will help you tell if they are. 
+When you request resources, you do not instantaneously receive them. You might end up waiting for those resources for a while, depending on how much you requested, and for how long. You can check on the status of your jobs from the command line. Run something like `qstat -u trb5me`. If your code is running slowly, or not at all, that might be explained by the fact that your resource request jobs are still sitting in the queue. This will help you tell if they are. Another useful command is `scancel -u trb5me`. This will cancel all of your resource request jobs. 
 
 Once the resources have been given to you, and after you started running your code, you can get more information about how everything is working by checking out [Dask's diagnostics](https://docs.dask.org/en/stable/diagnostics-distributed.html). To do that, open up a Firefox browser (in FastX on the frontend), and navigate over to `localhost:8787`. 
 
