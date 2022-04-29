@@ -1,5 +1,10 @@
 # Demo of Dask on Rivanna 
 
+## Getting Started
+
+This probably shouldn't be the first thing you read about how to get started on Rivanna. If you want more information, head over to [the user guide.](https://www.rc.virginia.edu/userinfo/rivanna/overview/)
+
+
 ## Upload any Required Data and Scripts
 
 Upload to the cluster any data and/or scripts you might need. Do something like this from your local machine's terminal to upload data
